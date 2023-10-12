@@ -1,0 +1,58 @@
+<!doctype html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="5217zhuan.ico"><title>vue3_study</title><style>main {
+      display: flex;
+      background-color: #fff;
+      align-items: center;
+      justify-content: center;
+      height: 1000px;
+      animation: animate1 10s linear infinite;
+    }
+
+    main .cube {
+      position: relative;
+      height: 120px;
+      width: 120px;
+    }
+
+    main .cube span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: rotate(calc(18deg * var(--i)));
+    }
+
+    main .cube span::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: aqua;
+      box-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 40px aqua, 0 0 80px aqua,
+        0 0 100px aqua;
+      animation: animate 2s linear infinite;
+      animation-delay: calc(0.1s * var(--i));
+    }
+
+    @keyframes animate {
+      0% {
+        transform: scale(1);
+      }
+
+      100% {
+        transform: scale(0);
+      }
+    }
+
+    .loading {
+      color: #666;
+      font-size: 20px;
+      position: relative;
+      top: 100px;
+      right: 100px;
+    }
+
+    @media (min-width: 765px) {}</style><script defer="defer" src="js/chunk-vendors.23ba30b2.js"></script><script defer="defer" src="js/app.5ee65cce.js"></script></head><body><noscript><strong>We're sorry but vue3_study doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"><main><div class="cube"><span style="--i: 1"></span> <span style="--i: 2"></span> <span style="--i: 3"></span> <span style="--i: 4"></span> <span style="--i: 5"></span> <span style="--i: 6"></span> <span style="--i: 7"></span> <span style="--i: 8"></span> <span style="--i: 9"></span> <span style="--i: 10"></span> <span style="--i: 11"></span> <span style="--i: 12"></span> <span style="--i: 13"></span> <span style="--i: 14"></span> <span style="--i: 15"></span> <span style="--i: 16"></span> <span style="--i: 17"></span> <span style="--i: 18"></span> <span style="--i: 19"></span> <span style="--i: 20"></span></div><div class="loading"><p>努力加载中…</p></div></main></div><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script></body></html>
